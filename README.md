@@ -1,6 +1,6 @@
 # Hardware accelerated Machine Learning on SoC :rocket:
 
-This project is a __hardware accelerated k-nearest neighbours__ algorithm implemented using the Xilinx Zynq-7000 SoC. The implementation is done using a custom hardware platform developed in Xilinx Vivado, and a co-designed system developed in Xilinx SDSoC, optimized using HLS and SDS. Software algorithms are implemented using C++11.
+This project is a __hardware accelerated k-nearest neighbours__ algorithm implemented using the Xilinx Zynq-7000 SoC. The implementation is based on a custom hardware platform developed in Xilinx Vivado, and a co-designed system to run on the platform, developed in Xilinx SDSoC. The system is designed and optimized using HLS and SDS. Software algorithms are implemented using C++11.
 
 __System structure:__
 - The accelerator implemented in programmable logic (Artix-7 FPGA) pipelines MAC operations to compute squared distances between a test vector and all reference vectors.
