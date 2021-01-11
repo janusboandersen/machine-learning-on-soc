@@ -1,0 +1,42 @@
+{
+    "example": "Xilinx Matrix Multiply",
+    "overview": "Demonstrates the Hardware Acceleration for a 24x24 Matrix for SDSoC course work",
+    "board": [
+        "mz_avnet",
+        "u96v1_avnet",
+        "u96v1_avnetpl",
+        "u96v2_avnet",
+        "u96v2_avnetpl",
+        "ultra96v2_oob",
+        "uzegiocc_avnet",
+        "uzegpcie_avnet",
+        "uzev_avnet",
+        "uzev_avnetpl",
+    ],
+    "os": [
+        "Linux",
+        "Standalone"
+    ],
+    "runtime": [
+        "C/C++"
+    ],
+    "accelerators": [
+        {
+            "name": "mmult_accel",
+            "location": "src/mmult.cpp"
+        }
+    ],
+    "contributors" : [
+        {
+            "group" : "Avnet",
+            "url" : "http://www.Avnet.com"
+        }
+    ],
+    "revision" : [
+        {
+            "date" : "2017",
+            "version" : "1.0",
+            "description" : "Initial revision"
+        }
+    ]
+}

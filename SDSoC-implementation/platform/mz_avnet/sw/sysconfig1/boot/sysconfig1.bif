@@ -1,0 +1,7 @@
+/*sysconfig1*/
+the_ROM_image:
+{
+  [bootloader]<sysconfig1/boot/fsbl.elf>
+   <bitstream> 
+  <elf>
+}
