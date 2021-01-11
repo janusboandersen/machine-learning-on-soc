@@ -4,7 +4,7 @@ This project is a __hardware accelerated k-nearest neighbours__ algorithm implem
 
 __System structure:__
 - The accelerator implemented in programmable logic (Artix-7 FPGA) pipelines MAC operations to compute squared distances between a test vector and all reference vectors.
-- The processing system (Arm Cortex-A9) performs sorting and searching for the K nearest neighbours. The user can choose the value for K on start-up.
+- The processing system (Arm Cortex-A9) performs sorting and searching for the K nearest neighbours, using the vector of squared distances returned from the accelerator. The user can choose the value for K on start-up.
 - Data is moved between PL and PS using FastDMA.
 - A dataset of 100 test vectors and 1024 query vectors is loaded via a header file. Currently, the system does colour classification of M&Ms using sampled 63-dimensionals feature vectors.
 
